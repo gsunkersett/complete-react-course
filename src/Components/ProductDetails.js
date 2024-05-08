@@ -18,7 +18,8 @@ function ProductDetails(props) {
         updateCount(++productCount);
     }
     let decrementProductCount = function() {
-        updateCount(--productCount);
+        //If it is already zero we don't want to reduce it further
+        updateCount(productCount >0 ? --productCount : productCount);
     }
     let badgeClass = "badge-margin-left-240 badge ";
     badgeClass += props.isAvailable === true ? 'bg-success' : 'bg-danger';
