@@ -4,9 +4,6 @@ import ProductDetails from "./ProductDetails";
 //let isAvailable = 'Available';
 
 
-
-
-
 function Products(props) {
 
 
